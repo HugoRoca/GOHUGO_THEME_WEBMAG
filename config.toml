@@ -31,9 +31,12 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
 [params]
 
+  # Disabled/Enabled buscador
+  search = false
+
   # --- Start sidebar options ---
   # Number of last posts that will be displayed in the sidebar - set to 0 or remove to hide this section
-  sidebarRecentLimit = 5
+  sidebarRecentLimit = 2
 
   # Sidebar header - passed to markdownify so you can write markdown here
   sidebarHeader = "Sidebar Header"
@@ -90,39 +93,8 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   # Google analytics code - remove if you do not have/want Google Analytics - needs JavaScript
   # googleAnalytics = "UA-XXXXX-X"
 
-  # Optional piwik tracking
-  #[params.analytics.piwik]
-  #  URL = "https://stats.example.com"
-  #  ID = "42"
-
-  # Switch to true to enable RSS icon link
-  rss = false
-
-  # Set to true to use a text label for RSS instead of an icon
-  # This is overwritten by the "rss" setting
-  textrss = false
-
   # Website's default description
   defaultDescription = ""
-
-  # Populate this with your own search keywords - these will appear in the meta tags
-  # defaultKeywords = ["keyword1" , "keyword2" , "keyword3" , "keyword4"]
-
-  # CSS override files
-  # Paths should be relative to the `static` directory
-  # customCSS = ["css/custom.css","css/custom2.css"]
-
-  # 404.html header and text - both support markdown
-  notFoundHeader = "There's nothing here"
-
-  notFoundText = """Please either go back or use the navigation/sidebar menus.
-  """
-
-  # Set to true to hide ReadingTime on posts
-  disableReadingTime = false
-
-  # Set to true to disable downloading of remote Google fonts
-  disableGoogleFonts = false
 
   # Remove or Set to false to use local fonts
   # remoteFonts = false
@@ -148,43 +120,30 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   # Set to true to enable compact index. Set to false or remove to go back to classic view.
   # compactIndex = true
 
-# Menu
-# If navigationNewWindow (under [params]) is set to true then all links except root ("/") will open in a new window
-# If it does not exist or is set to false then links will open in the same window
+# Menu ----------------------------------------------------------------------
 [[menu.main]]
-  Name = "Blog"
+  Name = "Inicio"
   URL = "/"
-  weight = -5
 
 [[menu.main]]
-  Name = "Google"
-  URL = "https://www.google.com/"
-  weight = -5
+  Name = "JavaScript"
+  URL = "/categories/javascript/"
 
 [[menu.main]]
-  Name = "This theme on Github"
-  URL = "https://www.github.com/parsiya/hugo-octopress"
+  Name = "Sistemas"
+  URL = "/categories/sistemas/"
 
+[[menu.main]]
+  Name = "NodeJS"
+  URL = "/categories/NodeJS/"
 
-# Sidebar menus
-# Enable with "sidebarMenuEnabled = true" under [params]
-# Header text is "sidebarMenuHeader" under [params]
+# Sidebar menus ---------------------------------------------------------------
+
 [[menu.sidebar]]
-  Name = "Google"
-  URL = "https://www.google.com"
+  Name = "Inicio"
+  URL = "/"
+
+[[menu.sidebar]]
+  Name = "Acerca de mí"
+  URL = "https://hugoroca.github.io"
   weight = 0
-
-[[menu.sidebar]]
-  Name = "Hugo"
-  URL = "/categories/hugo/"
-  weight = 1
-
-[[menu.sidebar]]
-  Name = "Homepage"
-  URL = "/"
-  weight = 2
-
-# Blackfriday is Hugo's markdown engine. Options are at: https://gohugo.io/overview/configuration/#configure-blackfriday-rendering
-[blackfriday]
-  hrefTargetBlank = true # open the external links in a new window
-  fractions = false
