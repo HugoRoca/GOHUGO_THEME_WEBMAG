@@ -75,7 +75,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   truncate = true
 
   # Author's name (appears in meta tags and under posts)
-  author = "Author's name"
+  author = "Hugo Roca"
 
   # This text appears in the site header under website title
   subtitle = "Subtitle appears under website title"
@@ -96,7 +96,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   #  ID = "42"
 
   # Switch to true to enable RSS icon link
-  rss = true
+  rss = false
 
   # Set to true to use a text label for RSS instead of an icon
   # This is overwritten by the "rss" setting
