@@ -36,7 +36,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
   # --- Start sidebar options ---
   # Number of last posts that will be displayed in the sidebar - set to 0 or remove to hide this section
-  sidebarRecentLimit = 2
+  sidebarRecentLimit = 4
 
   # Sidebar header - passed to markdownify so you can write markdown here
   sidebarHeader = "Sidebar Header"
