@@ -2,7 +2,6 @@ baseurl = "http://example.com"
 disablePathToLower = false
 languageCode = "es-PE"
 title = "Site title"
-theme = "hugo-octopress"
 
 # Disqus shortcode
 # Disable comments for any individual post by adding "comments: false" in its frontmatter
