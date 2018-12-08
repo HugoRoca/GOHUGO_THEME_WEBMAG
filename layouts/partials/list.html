@@ -6,9 +6,19 @@
                 <a class="post-img" href="{{ .Permalink }}"><img src="{{ .Params.image }}" alt=""></a>
                 <div class="post-body">
                     <div class="post-meta">
-
-                        <a class="post-category cat-2" href="">JavaScript</a>
-
+                        {{ if isset .Params "categories" }}
+                            {{ range .Params.categories }}
+                                {{ if eq . "JavaScript"}}
+                                <a class="post-category cat-2" href="{{ "/categories/" | absURL }}{{ . | urlize | lower }}/">{{ . }} </a>
+                                {{ end }}
+                                {{ if eq . "Sistemas"}}
+                                <a class="post-category cat-4" href="{{ "/categories/" | absURL }}{{ . | urlize | lower }}/">{{ . }} </a>
+                                {{ end }}
+                                {{ if eq . "NodeJS"}}
+                                <a class="post-category cat-1" href="{{ "/categories/" | absURL }}{{ . | urlize | lower }}/">{{ . }} </a>
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
                         <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
                     </div>
                     <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
