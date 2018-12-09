@@ -1,7 +1,7 @@
 baseurl = "http://example.com"
 disablePathToLower = false
 languageCode = "es-PE"
-title = "Site title"
+title = "Hugo Roca | Proyectos - Web"
 # Disqus
 disqusShortname = "Your disqus shortname"
 # Tamaño de paginación
