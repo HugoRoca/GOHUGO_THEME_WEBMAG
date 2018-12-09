@@ -1,9 +1,14 @@
 baseurl = "http://example.com"
 disablePathToLower = false
 languageCode = "es-PE"
+theme = "hugo-webmag"
 title = "Hugo Roca | Proyectos - Web"
+contentdir = "content"
+datadir = "data"
+layoutdir = "layouts"
+publishdir = "docs"
 # Disqus
-disqusShortname = "Your disqus shortname"
+disqusShortname = "hugorocaproyectos"
 # Tamaño de paginación
 paginate = 4
 
