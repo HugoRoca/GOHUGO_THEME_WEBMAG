@@ -123,19 +123,32 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 [[menu.main]]
   Name = "Inicio"
   URL = "/"
+  weight = 1
 
 [[menu.main]]
   Name = "JavaScript"
   URL = "/categories/javascript/"
+  weight = 2
+
+[[menu.main]]
+  Name = "C Sharp"
+  URL = "/categories/c-schap/"
+  weight = 3
+
+[[menu.main]]
+  Name = "PHP"
+  URL = "/categories/php"
+  weight = 4
+
+[[menu.main]]
+  Name = "Base de datos"
+  URL = "/categories/base-de-datos"
+  weight = 5
 
 [[menu.main]]
   Name = "Sistemas"
   URL = "/categories/sistemas/"
-
-[[menu.main]]
-  Name = "Visual Studio"
-  URL = "/categories/visual-studio/"
-
+  weight = 6
 # Sidebar menus ---------------------------------------------------------------
 
 [[menu.sidebar]]

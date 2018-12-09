@@ -9,7 +9,8 @@ tag:
  - JQuery
  - SQLServer
 categories:
- - Visual Studio
+ - JavaScript
+ - C Sharp
  - Sistemas
 ---
 

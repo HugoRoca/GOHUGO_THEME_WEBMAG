@@ -1,16 +1,22 @@
 <ul class="nav-menu nav navbar-nav">
-    {{ range .Site.Menus.main }}
+    {{ range .Site.Menus.main.ByWeight }}
     {{ if eq .Name "Inicio"}}
     <li>
     {{ end }}
     {{ if eq .Name "JavaScript"}}
-    <li class="cat-2">
+    <li class="cat-javascript">
     {{ end }}
     {{ if eq .Name "Sistemas"}}
-    <li class="cat-1">
+    <li class="cat-sistemas">
     {{ end }}
-    {{ if eq .Name "Visual Studio"}}
-    <li class="cat-4">
+    {{ if eq .Name "C Sharp"}}
+    <li class="cat-csharp">
+    {{ end }}
+    {{ if eq .Name "Base de datos"}}
+    <li class="cat-basedatos">
+    {{ end }}
+    {{ if eq .Name "PHP"}}
+    <li class="cat-php">
     {{ end }}
         <a href="{{ .URL | absURL }}" title="{{ .Name}}">{{ .Name }}</a>
     </li>
