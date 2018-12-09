@@ -7,10 +7,10 @@
     <li class="cat-2">
     {{ end }}
     {{ if eq .Name "Sistemas"}}
-    <li class="cat-3">
-    {{ end }}
-    {{ if eq .Name "NodeJS"}}
     <li class="cat-1">
+    {{ end }}
+    {{ if eq .Name "Visual Studio"}}
+    <li class="cat-4">
     {{ end }}
         <a href="{{ .URL | absURL }}" title="{{ .Name}}">{{ .Name }}</a>
     </li>

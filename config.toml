@@ -9,7 +9,7 @@ title = "Site title"
 disqusShortname = "Your disqus shortname"
 
 # Number of blog posts in each pagination page
-paginate = 6
+paginate = 10
 
 # Code highlighting options
 # Hugo uses Chroma but names are the same as the old pygments highlighter
@@ -133,8 +133,8 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
   URL = "/categories/sistemas/"
 
 [[menu.main]]
-  Name = "NodeJS"
-  URL = "/categories/NodeJS/"
+  Name = "Visual Studio"
+  URL = "/categories/visual-studio/"
 
 # Sidebar menus ---------------------------------------------------------------
 

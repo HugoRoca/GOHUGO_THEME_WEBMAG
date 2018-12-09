@@ -1,16 +1,16 @@
 ---
-section: post
 date: "2018-04-15"
 title: "Portafolio Profesional"
 description: "¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema."
-slug: 2018-04-15-PortafolioProyecto
 author: "Hugo Roca"
 image: images/post/portafolio.jpg
-share: true
 tag:
  - C#
  - JQuery
  - SQLServer
+categories:
+ - Visual Studio
+ - Sistemas
 ---
 
 ¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema.
