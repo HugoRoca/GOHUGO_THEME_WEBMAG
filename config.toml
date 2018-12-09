@@ -15,31 +15,10 @@ paginate = 4
 post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the old ones
 
 [params]
-
   # Disabled/Enabled buscador
   search = false
-
-  # --- Start sidebar options ---
   # Number of last posts that will be displayed in the sidebar - set to 0 or remove to hide this section
   sidebarRecentLimit = 4
-
-  # Sidebar header - passed to markdownify so you can write markdown here
-  sidebarHeader = "Sidebar Header"
-
-  # Sidebar text also supports markdown
-  # New lines can be added with </br> or normal markdown (two spaces at the end of line or two new lines).
-  # when adding two new lines, remember to remove the indentation otherwise the new line will be treated as a codeblock
-  sidebarText = """Here's a [link to google](https://www.google.com)
-  </br>
-  Second line
-  </br>
-  Third line
-  This line has two spaces in the end to create a new line using markdown
-  Forth line
-  """
-  # Sidebar menu - if true will add a sidebar menu between sidebar text and recent posts
-  sidebarMenuEnabled = true
-  sidebarMenuHeader = "Sidebar Links"
 
   # sidebar links
   github = "https://github.com/parsiya/"
@@ -55,34 +34,17 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
   # --- End sidebar options ---
 
-  # If set to true, navigation menu links will open in a new window with the exception of links to root ("/")
-  # If this item does not exist or set to false, then navigation menu links will open in the same window
-  navigationNewWindow = true
-
-  # If false, all of blog post will appear on front page (and in pagination)
-  truncate = true
-
   # Author's name (appears in meta tags and under posts)
   author = "Hugo Roca"
 
-  # This text appears in the site header under website title
-  subtitle = "Subtitle appears under website title"
-
   # Search engine URL
   searchEngineURL = "https://www.google.com/search"
-
-  # Text of the "Continue Reading" label. Supports markdown and inline HTML.
-  # For example, &rarr; == right arrow.
-  continueReadingText = "Would you like to know more? &rarr;"
 
   # Google analytics code - remove if you do not have/want Google Analytics - needs JavaScript
   # googleAnalytics = "UA-XXXXX-X"
 
   # Website's default description
   defaultDescription = ""
-
-  # Remove or Set to false to use local fonts
-  # remoteFonts = false
   
   # Remove or set to false to use FontAwesome CDN, otherwise the theme uses ForkAwesome local fonts.
   # fontAwesome = false

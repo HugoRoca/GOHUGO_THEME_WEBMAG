@@ -13,12 +13,17 @@
             {{ $plural := .Data.Plural }}
             {{ range $key, $value := .Data.Terms }}
             <li>
+
                 <a class="cat-1" href="{{ "/" | relLangURL}}{{ $plural }}/{{ $key | urlize }}">
                     {{ $key }}
                     <span>{{ len $value }}</span>
                 </a>
             </li>
             {{ end }}
+            <li><a href="#" class="cat-1">Web Design<span>340</span></a></li>
+            <li><a href="#" class="cat-2">JavaScript<span>74</span></a></li>
+            <li><a href="#" class="cat-4">JQuery<span>41</span></a></li>
+            <li><a href="#" class="cat-3">CSS<span>35</span></a></li>
         </ul>
     </div>
 </div>

@@ -3,9 +3,9 @@ date: "2018-04-15"
 title: "Portafolio Profesional"
 description: "¿Alguna véz haz querido hacer un curriculum profesional usando algo diferente? En esta ocación te traigo el siguiente sistema."
 author: "Hugo Roca"
-image: images/post/portafolio.jpg
+image: /images/post/portafolio.jpg
 tag:
- - C#
+ - CSharp
  - JQuery
  - SQLServer
 categories:
