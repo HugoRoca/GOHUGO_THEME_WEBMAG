@@ -1,0 +1,36 @@
+<div class="aside-widget text-center">
+    <a href="#" style="display: inline-block;margin: auto;">
+        <img class="img-responsive" src="/ad-1.jpg" alt="">
+    </a>
+</div>
+
+<div class="aside-widget">
+    <div class="section-title">
+        <h2>Categorias</h2>
+    </div>
+    <div class="category-widget">
+        <ul>
+            {{ $plural := .Data.Plural }}
+            {{ range $key, $value := .Data.Terms }}
+            <li>
+                <a class="cat-1" href="{{ "/" | relLangURL}}{{ $plural }}/{{ $key | urlize }}">
+                    {{ $key }}
+                    <span>{{ len $value }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+
+<div class="aside-widget">
+    <div class="tags-widget">
+        <ul>
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+            <li>
+                <a href="{{ "tags" | absURL }}/{{ $name | urlize }}">{{ $name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
