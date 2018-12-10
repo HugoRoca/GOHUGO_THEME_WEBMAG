@@ -14,7 +14,7 @@ paginate = 5
 
 [taxonomies]
     tag = "tags"
-    categories = "categories"
+    category = "categories"
 
 [permalinks]
 post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the old ones
@@ -85,7 +85,7 @@ post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the 
 
 [[menu.main]]
   Name = "C Sharp"
-  URL = "/categories/c-schap/"
+  URL = "/categories/c-sharp/"
   weight = 3
 
 [[menu.main]]

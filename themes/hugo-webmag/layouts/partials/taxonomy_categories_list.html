@@ -3,11 +3,11 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center">
-                    <h2>Tag: {{ .Title }}</h2>
+                    <h2>Categoría: {{ upper .Title }}</h2>
                 </div>
             </div>
-            {{ $tag := lower .Title }}
-            {{ range $key, $value := .Site.Taxonomies.tags }}
+            {{ $tag := urlize .Title }}
+            {{ range $key, $value := .Site.Taxonomies.categories }}
                 {{ if eq $key $tag }}
                     {{ range $value.Pages }}
                     <div class="col-md-4">
