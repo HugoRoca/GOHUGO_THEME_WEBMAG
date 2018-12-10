@@ -13,11 +13,11 @@ disqusShortname = "hugorocaproyectos"
 paginate = 5
 
 [taxonomies]
-    tag = "tags"
-    category = "categories"
+  tag = "tags"
+  category = "categories"
 
 [permalinks]
-post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the old ones
+  post = "/blog/:year-:month-:day-:title/" # change the post URL to look like the old ones
 
 [params]
   # Disabled/Enabled buscador
