@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <meta name="description" content="">
+    <meta name="description" content="Una forma mas rápida de realizar CRUD&#39;s, a tan solo unos clicks. Este es el poderosisimo Entity Framework">
     <meta name="keywords" content="[JavaScript jquery C# PHP SQLServer Sistemas Codigo fuente Código fuente]">
     <meta name="author" content="Hugo Roca">
     
-    <title>Angularjs</title>
+    <title>Entity Framework Básico</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/webmag.css">
@@ -26,6 +26,16 @@
     
     
     
+
+  
+    <meta name="twitter:card" content="summary"/>
+  
+  
+  <meta name="twitter:title" content="Entity Framework Básico"/>
+  <meta name="twitter:description" content="Una forma mas rápida de realizar CRUD&#39;s, a tan solo unos clicks. Este es el poderosisimo Entity Framework"/>
+  <meta name="twitter:site" content="@https://hugorocaproyectos.js.org"/>
+  <meta name="twitter:domain" content="parsiya.net"/>
+  <meta name="twitter:creator" content="@HuugooRoca"/>
 
     
 </head>
@@ -217,126 +227,302 @@
         <button class="nav-aside-close"><i class="fa fa-times"></i></button>
     </div>
 </div>
-        <div class="page-header">
+
+        <div id="post-header" class="page-header">
+            <div class="background-img" style="background-image: url('/images/post/entity-framework-basico.jpg');"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-10">
-                        <ul class="page-header-breadcrumb">
-                            <li><a href="/">Inicio</a></li>
-                            <li>Angularjs</li>
-                        </ul>
-                        <h1>ANGULARJS</h1>
+                        <div class="post-meta">
+                            
+    
+        
+        
+        
+        <a class="post-category cat-csharp" href="http://example.com/categories/c-sharp/">C Sharp </a>
+        
+        
+        
+    
+        
+        
+        
+        
+        <a class="post-category cat-basedatos" href="http://example.com/categories/base-de-datos/">Base de datos </a>
+        
+        
+    
+
+                            <span class="post-date">May 6, 2018</span>
+                        </div>
+                        <h1>Entity Framework Básico</h1>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-<div class="section section-grey">
+
+<div class="section">
     <div class="container">
         <div class="row">
+            <div class="col-md-8">
+                <div class="section-row sticky-container">
+                    <div class="main-post">
+                        
+                        
+                        
+                        
+
+<p>Una forma mas rápida de realizar CRUD&rsquo;s, a tan solo unos clicks. Este es el poderosisimo Entity Framework</p>
+
+<h2 id="paso-1">Paso 1</h2>
+
+<p>Puedes obtener el codigo fuente de la siguiente forma:</p>
+
+<ol>
+<li>Clonar <a href="https://github.com/PORTAFOLIO-PROYECTOS/ENTITY-FRAMEWORK-BASICO">ENTITY-FRAMEWORK-BASICO</a></li>
+<li>Abrir la solución y explorar el código fuente</li>
+</ol>
+
+<h2 id="paso-2">Paso 2</h2>
+
+<p>Ejecutar lo siguiente en SQLServer</p>
+
+<pre><code>CREATE DATABASE Test
+GO
+
+USE Test
+GO
+
+CREATE TABLE [dbo].[Alumno](
+    [id] [int] IDENTITY(1,1) NOT NULL,
+    [Nombre] [varchar](50) NOT NULL,
+    [Apellido] [varchar](100) NOT NULL,
+    [Sexo] [int] NOT NULL,
+    [FechaNacimiento] [varchar](10) NOT NULL
+    primary key (id))
+GO
+</code></pre>
+
+<h2 id="paso-3">Paso 3</h2>
+
+<p>Una vez ejecutado el script, abrir el archivo App.config y cambiar las siguientes lineas:</p>
+
+<pre><code>&lt;connectionStrings&gt;
+    &lt;add name=&quot;TestContext&quot; 
+    connectionString=&quot;
+        data source=.; 
+        initial catalog=Test;
+        user id=sa; =&gt; 'cambiar por tu usuario o en caso no tengas, quitar'
+        password=1234; =&gt; 'cambiar por tu usuario o en caso no tengas, quitar'
+        MultipleActiveResultSets=True;
+        App=EntityFramework&quot; 
+        providerName=&quot;System.Data.SqlClient&quot; /&gt;
+&lt;/connectionStrings&gt;
+</code></pre>
+
+<h2 id="paso-4">Paso 4</h2>
+
+<p>Ejecutar y puedes comenzar a realizar registros&hellip; Comenta, disfruta y comparte!</p>
+
+                    </div>
+                    <div class="post-shares sticky-shares">
+                        <a href="#" class="share-facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="share-twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="share-google-plus"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="share-pinterest"><i class="fa fa-pinterest"></i></a>
+                        <a href="#" class="share-linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="section-row">
+                    
+                    <div class="post-comments">
+                        <div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+      
+      
+      
+      if (window.location.hostname == "localhost")
+          return;
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'hugorocaproyectos';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="aside-widget text-center">
+    <a href="#" style="display: inline-block;margin: auto;">
+        <img class="img-responsive" src="/ad-1.jpg" alt="">
+    </a>
+</div>
+
+
+    
+        <div class="aside-widget">
+            <div class="section-title">
+                <h2>Post Recientes</h2>
+            </div>
             
             
                 
-                    
-                    <div class="col-md-4">
-                        <div class="post">
-                            <a class="post-img" href="/blog/2018-03-30-sigeven-2.0/"><img src="/images/post/sigeven2.0.jpg" alt=""></a>
-                            <div class="post-body">
-                                <div class="post-meta">
-                                    
-                                        
-                                            
-                                            <a class="post-category cat-javascript" href="http://example.com/categories/javascript/">JavaScript </a>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                        
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <a class="post-category cat-php" href="http://example.com/categories/php/">PHP </a>
-                                            
-                                        
-                                            
-                                            
-                                            <a class="post-category cat-sistemas" href="http://example.com/categories/sistemas/">Sistemas </a>
-                                            
-                                            
-                                            
-                                            
-                                        
-                                    
-                                    <span class="post-date">Mar 30, 2018</span>
-                                </div>
-                                <h3 class="post-title"><a href="blog-post.html">SIGEVEN 2.0</a></h3>
+                    <div class="post post-thumb">
+                            <a class="post-img" href="/blog/2018-10-02-gr%C3%A1ficos-con-d3js/"><img src="/images/post/d3js.jpg" alt=""></a>
+                        <div class="post-body">
+                            <div class="post-meta">
+                                
+    
+        
+        <a class="post-category cat-javascript" href="http://example.com/categories/javascript/">JavaScript </a>
+        
+        
+        
+        
+        
+    
+
+                                <span class="post-date">Oct 2, 2018</span>
                             </div>
+                            <h3 class="post-title"><a href="/blog/2018-10-02-gr%C3%A1ficos-con-d3js/">Gráficos con D3JS</a></h3>
                         </div>
                     </div>
-                    
-                    <div class="col-md-4">
-                        <div class="post">
-                            <a class="post-img" href="/blog/2018-03-04-sigeven-1.0/"><img src="/images/post/sigeven1.0.jpg" alt=""></a>
-                            <div class="post-body">
-                                <div class="post-meta">
-                                    
-                                        
-                                            
-                                            <a class="post-category cat-javascript" href="http://example.com/categories/javascript/">JavaScript </a>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                        
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <a class="post-category cat-php" href="http://example.com/categories/php/">PHP </a>
-                                            
-                                        
-                                            
-                                            
-                                            <a class="post-category cat-sistemas" href="http://example.com/categories/sistemas/">Sistemas </a>
-                                            
-                                            
-                                            
-                                            
-                                        
-                                    
-                                    <span class="post-date">Mar 4, 2018</span>
-                                </div>
-                                <h3 class="post-title"><a href="blog-post.html">SIGEVEN 1.0</a></h3>
+                
+            
+                
+                    <div class="post post-thumb">
+                            <a class="post-img" href="/blog/2018-09-15-programaci%C3%B3n-orientada-a-objetos/"><img src="/images/post/POO.jpg" alt=""></a>
+                        <div class="post-body">
+                            <div class="post-meta">
+                                
+                                <span class="post-date">Sep 15, 2018</span>
                             </div>
+                            <h3 class="post-title"><a href="/blog/2018-09-15-programaci%C3%B3n-orientada-a-objetos/">Programación Orientada a Objetos</a></h3>
                         </div>
                     </div>
-                    
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
                 
             
         </div>
+    
+
+
+<div class="aside-widget">
+    <div class="section-title">
+        <h2>Categorías</h2>
+    </div>
+    <div class="category-widget">
+        <ul>
+            
+            
+                
+                
+                
+                
+                <li><a class="cat-basedatos" href="http://example.com/categories/base-de-datos">Base de datos<span>3</span></a></li>
+                
+                
+            
+            
+                
+                
+                
+                <li><a class="cat-csharp" href="http://example.com/categories/c-sharp">C Sharp<span>4</span></a></li>
+                
+                
+                
+            
+            
+                
+                <li><a class="cat-javascript" href="http://example.com/categories/javascript">JavaScript<span>5</span></a></li>
+                
+                
+                
+                
+                
+            
+            
+                
+                
+                
+                
+                
+                <li><a class="cat-php" href="http://example.com/categories/php">PHP<span>2</span></a></li>
+                
+            
+            
+                
+                
+                <li><a class="cat-sistemas" href="http://example.com/categories/sistemas">Sistemas<span>4</span></a></li>
+                
+                
+                
+                
+            
+        </ul>
     </div>
 </div>
+
+<div class="aside-widget">
+    <div class="section-title">
+        <h2>Tags</h2>
+    </div>
+    <div class="tags-widget">
+        <ul>
+            
+                <li>
+                    <a href="http://example.com/tags/angularjs">angularjs</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/csharp">csharp</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/css3">css3</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/html5">html5</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/jquery">jquery</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/js">js</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/php">php</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/poo">poo</a>
+                </li>
+            
+                <li>
+                    <a href="http://example.com/tags/sqlserver">sqlserver</a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <footer id="footer">
     <div class="container">
         <div class="row">

@@ -111,5 +111,14 @@ Paso 1 Puedes obtener el codigo fuente de la siguiente forma:
 ▾ App/ ▾ private/ ▾ articulo/ articulo.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://example.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/contact/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
