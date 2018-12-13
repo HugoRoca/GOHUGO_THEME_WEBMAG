@@ -22,7 +22,7 @@
     <!-- Generator version for usage tacking -->
     {{ .Hugo.Generator }}
     <!-- Google Analytics -->
-    {{ template "_internal/google_analytics_async.html" . }}
+    {{ template "_internal/google_analytics.html" . }}
     <!-- Enable Twitter card -->
     {{ with .Site.Params.twitterCardEnabled }}
     {{ partial "custom_twitter_card.html" $ }}
