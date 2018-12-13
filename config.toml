@@ -27,12 +27,11 @@ paginate = 5
   siebarSingleRecentLimit = 2
 
   # sidebar links
-  github = "https://github.com/parsiya/"
-  bitbucket = "https://bitbucket.org/parsiya/"
-  twitter = "https://twitter.com/cryptogangsta/"
-  keybase = "https://keybase.io/parsiya/"
+  github = "https://github.com/HugoRoca"
+  bitbucket = ""
+  twitter = "https://twitter.com/HuugooRoca"
   stackoverflow = ""
-  linkedin = ""
+  linkedin = "https://www.linkedin.com/in/hugoroca/"
   googleplus = ""
   youtube = ""
   facebook = ""
@@ -51,15 +50,9 @@ paginate = 5
 
   # Website's default description
   defaultDescription = ""
-  
-  # Remove or set to false to use FontAwesome CDN, otherwise the theme uses ForkAwesome local fonts.
-  # fontAwesome = false
 
   # Generate taxonomy pages
   generateTaxonomyList = true
-
-  # This is not needed unless alphabetical sort is needed
-  # sortTaxonomyAlphabetical = true
 
   # Twitter card config
   # Enable with this.
@@ -69,9 +62,6 @@ paginate = 5
   # twitterCardDomain = "parsiya.net"
   # Don't include the @.
   # twitterCardAuthor = "CryptoGangsta"
-
-  # Set to true to enable compact index. Set to false or remove to go back to classic view.
-  # compactIndex = true
 
 # Menu ----------------------------------------------------------------------
 [[menu.main]]

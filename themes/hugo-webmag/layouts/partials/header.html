@@ -34,16 +34,6 @@
                 <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-twitter"></i></a></li>
                 {{ end }}
 
-                {{ if not .Site.Params.fontAwesome }}
-                    {{ with .Site.Params.keybase }}
-                    <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-keybase"></i></a></li>
-                    {{ end }}
-                {{ else }}
-                    {{ with .Site.Params.keybase }}
-                    <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-key"></i></a></li>
-                    {{ end }}
-                {{ end }}
-
                 {{ with .Site.Params.linkedin }}
                 <li><a target="_blank" href="{{ . }}" title="{{ . }}"><i class="fa fa-linkedin"></i></a></li>
                 {{ end }}
